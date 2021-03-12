@@ -6,7 +6,7 @@
       I study Computer Science and work on various project in my free time.
     </p>
 
-    <div id="content" class="container" position="50">
+    <div id="content" class="container">
       <h1>Content</h1>
       <div class="row">
         <div class="col-xs-4">About</div>
