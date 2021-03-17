@@ -9,9 +9,9 @@
     <div id="content" class="container">
       <h1>Content</h1>
       <div class="row">
-        <div class="col-xs-4">About</div>
-        <div class="col-xs-4">Resume</div>
-        <div class="col-xs-4">Blog</div>
+        <div class="col-xs-4"><h3>Home</h3></div>
+        <div class="col-xs-4"><h3>Resume</h3></div>
+        <div class="col-xs-4"><h3>Blog</h3></div>
       </div>
     </div>
   </div>
