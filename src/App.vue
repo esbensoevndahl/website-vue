@@ -18,16 +18,21 @@
     />
   </svg>
   <LandingPage msg="Hi I'm Esben" />
+<div id="footer">  
+<Footer></Footer>
+</div>
 </template>
 
 <script>
 import NavBar from "./components/NavBar.vue";
 import LandingPage from "./components/LandingPage.vue";
+import Footer from './components/Footer.vue';
 export default {
   name: "App",
   components: {
     LandingPage,
     NavBar,
+    Footer,
   },
 };
 </script>
@@ -41,5 +46,10 @@ export default {
   color: #2c3e50;
   margin-top: 0px;
 }
-	
+
+.footer{
+  position: absolute;
+  bottom: 10px;
+  width: 50%;
+}
 </style>
