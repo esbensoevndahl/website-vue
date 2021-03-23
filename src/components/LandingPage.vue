@@ -70,8 +70,9 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 div.absolute {
-  position: relative;
-  margin-top: 250px;
+  position: center;
+  margin-top: 100px;
+  margin-bottom: 50px;
 }
 .color-box {
   width: 40px;

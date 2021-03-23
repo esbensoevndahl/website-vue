@@ -1,4 +1,5 @@
 <template>
+    <div id="divfix">
     <a href="https://www.linkedin.com/in/esben-s%C3%B8vndahl-kok-bb55711b8/"
       ><svg
         xmlns="http://www.w3.org/2000/svg"
@@ -13,6 +14,7 @@
         />
       </svg>
     </a>
+    </div>
 </template>
 
 <script>
@@ -20,3 +22,11 @@ export default {
   setup() {},
 };
 </script>
+
+<style scoped>
+#divfix {
+       bottom: 20px;
+       position: fixed;
+       z-index: 3000;
+}
+</style>
