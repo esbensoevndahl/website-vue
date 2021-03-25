@@ -7,15 +7,13 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="#"
-            >Home <span class="sr-only">(current)</span></a
-          >
+          <a class="nav-link" href="#" @click="showHome()">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Resume</a>
+          <a class="nav-link" href="#" @click="showResume()">Resume</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Blog</a>
+          <a class="nav-link" href="#" @click="showBlog()">Blog</a>
         </li>
       </ul>
     </div>
@@ -24,6 +22,25 @@
 
 <script>
 export default {
-  setup() {},
+  name: "navBar",
+  data() {
+    return {
+      active: "home",
+    };
+  },
+  methods: {
+    showResume() {
+      this.active = "resume";
+      this.$emit("change-page", "resume");
+    },
+    showHome() {
+      this.active = "home";
+      this.$emit("change-page", "home");
+    },
+    showBlog() {
+      this.active = "blog";
+      this.$emit("change-page", "blog");
+    },
+  },
 };
 </script>
