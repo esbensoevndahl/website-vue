@@ -1,6 +1,12 @@
 <template>
+  <header>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.10.1/devicon.min.css"
+    />
+  </header>
   <div class="hello" :style="{ color: textColor }">
-    <h1>Overview</h1>
+    <h1>Who am I?</h1>
     <p>
       I'm a student from Copenhagen, Denmark pursuing a career in the tech
       industry. I'm fluent in English, German and Danish. <br />
@@ -18,25 +24,88 @@
         <i><b>Boston University</b>, Boston, Massachusetts, USA,</i> Class of
         <b>2022</b>
       </h4>
-      <div class="col-xs-8">
+      <div class="col-xs-6">
         <h4><b>Relevant courses:</b></h4>
         <ul>
           <li :key="subject" v-for="subject in classes">{{ subject }}</li>
         </ul>
       </div>
 
-      <div class="col-xs-2">
+      <div class="col-xs-6">
         <h4><b>Programming languages include:</b></h4>
+        <i class="devicon-c-line"></i>
+        <i class="devicon-java-plain colored"></i>
+        <i class="devicon-python-plain colored"></i>
+        <i class="devicon-html5-plain colored"></i>
+        <i class="devicon-css3-plain colored"></i>
+        <i class="devicon-javascript-plain colored"></i>
+        <i class="devicon-vuejs-plain colored"></i>
         <ul>
           <li :key="language" v-for="language in programmingLanguages">
             {{ language }}
           </li>
         </ul>
       </div>
+
+      <h4>
+        STX <b>Physics, Mathematics and Chemistry</b> at
+        <i><b>Gammel Hellerup Gymnasium</b>, Copenhagen, Denmark,</i>
+        <b> 2015 - 2018</b>
+      </h4>
     </div>
+    <br>
 
     <div id="accomplishments">
       <h2>Accomplishments</h2>
+      <div class="col-xs-6">
+        <h4><b>Danish National Rowing Team:</b></h4>
+        <ul>
+          <li class="left"><b>2015</b>, <i>U18, Baltic Cup</i>, 5th place</li>
+          <br />
+          <li class="left">
+            <b>2016</b>, <i>U19, European Rowing Championships</i>, 5th place
+          </li>
+          <br />
+          <li class="subleft">
+            <i>U19, World Rowing Championships</i>, 11th place
+          </li>
+          <br />
+          <li class="left">
+            <b>2017</b>, <i>U19, European Rowing Championships</i>, 5th place
+          </li>
+          <br />
+          <li class="subleft">
+            <i>U19, World Rowing Championships</i>, 7th place
+          </li>
+          <br />
+          <li class="left">
+            <b>2018</b>, <i>U23, World Rowing Championships</i>, 10th place
+          </li>
+          <br />
+        </ul>
+      </div>
+
+      <div class="col-xs-6">
+        <h4><b>Boston University Men's Crew:</b></h4>
+        <ul>
+          <li class="left">
+            <b>2018</b>, <i>Head of the Charles Regatta</i>, MA, USA
+          </li>
+          <br />
+          <li class="left"><b>2019</b>, <i>Windermere Cup</i>, WA, USA</li>
+          <br />
+          <li class="subleft"><i>Eastern Sprints Regatta</i>, MA, USA</li>
+          <br />
+          <li class="subleft">
+            <i>IRA National Championship Regatta</i>, CA, USA
+          </li>
+          <br />
+          <li class="subleft"><i>Henley Royal Regatta</i>, Henley, UK</li>
+          <br />
+          <li class="subleft"><i>Head of the Charles Regatta</i>, MA, USA</li>
+          <br />
+        </ul>
+      </div>
     </div>
 
     <div id="contact">
@@ -101,13 +170,12 @@ export default {
         "Concepts of Programming Languages",
       ],
       programmingLanguages: [
-        "Python",
+        "C",
         "Java",
         "Ocaml",
-        "C#",
+        "Python",
         "HTML/CSS",
-        "Vue.js",
-        "JavaScript",
+        "JavaScript and Vue.js",
       ],
     };
   },
@@ -117,5 +185,13 @@ export default {
 <style scoped>
 ul {
   list-style-type: none;
+}
+.left {
+  position: absolute;
+  margin-left: 275px;
+}
+.subleft {
+  position: absolute;
+  margin-left: 324px;
 }
 </style>

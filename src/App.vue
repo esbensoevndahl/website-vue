@@ -25,23 +25,23 @@
     <resume></resume>
   </div>
 
-  <div id="footer">
-    <Footer></Footer>
+  <div id="blog" v-if="blogIsActive">
+    <blog></blog>
   </div>
 </template>
 
 <script>
 import NavBar from "./components/NavBar.vue";
 import LandingPage from "./components/LandingPage.vue";
-import Footer from "./components/Footer.vue";
+import Blog from "./components/Blog.vue";
 import Resume from "./components/Resume.vue";
 export default {
   name: "App",
   components: {
     LandingPage,
     NavBar,
-    Footer,
     Resume,
+    Blog,
   },
   data() {
     return {

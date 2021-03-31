@@ -6,7 +6,7 @@
       I study Computer Science and work on various project in my free time.
       <br />
       I recently started learning Vue.js, which is what this website has been
-      written with.
+      built with.
     </p>
 
     <div class="absolute">
