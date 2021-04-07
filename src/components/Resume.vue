@@ -188,10 +188,10 @@ ul {
 }
 .left {
   position: absolute;
-  margin-left: 275px;
+  margin-left: 200px;
 }
 .subleft {
   position: absolute;
-  margin-left: 324px;
+  margin-left: 250px;
 }
 </style>

@@ -19,6 +19,10 @@
     </div>
   </div>
 
+  <button type="button" class="btn btn-light">
+    Toggle dark mode
+  </button>
+  <br><br>
   <button type="button" class="btn btn-light" @click="showColors()">
     Change font color
   </button>
