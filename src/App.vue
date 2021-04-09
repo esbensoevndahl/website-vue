@@ -1,9 +1,15 @@
 <template>
-  <!-- Latest compiled and minified CSS -->
-  <link
-    rel="stylesheet"
-    href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
-  />
+  <header>
+    <head>
+      <title>Esben's blog</title>
+      <!-- Latest compiled and minified CSS -->
+    </head>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+  </header>
+  <body>
   <nav-bar @change-page="activePage"></nav-bar>
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -28,6 +34,7 @@
   <div id="blog" v-if="blogIsActive">
     <blog></blog>
   </div>
+  </body>
 </template>
 
 <script>
@@ -87,9 +94,7 @@ export default {
   margin-top: 0px;
 }
 
-.footer {
-  position: absolute;
-  bottom: 10px;
-  width: 50%;
+body{
+  
 }
 </style>

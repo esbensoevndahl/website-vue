@@ -1,4 +1,5 @@
 <template>
+<body>
   <div class="hello" :style="{ color: textColor }">
     <h1>{{ msg }}</h1>
     <p>
@@ -9,14 +10,7 @@
       built with.
     </p>
 
-    <div class="absolute">
-      <h1>Content</h1>
-      <div class="row">
-        <div class="col-xs-4"><h3>Home</h3></div>
-        <div class="col-xs-4"><h3>Resume</h3></div>
-        <div class="col-xs-4"><h3>Blog</h3></div>
-      </div>
-    </div>
+    <br><br>
   </div>
 
   <button type="button" class="btn btn-light">
@@ -36,6 +30,7 @@
       float:left
     ></li>
   </ul>
+  </body>
 </template>
 
 <script>
@@ -91,5 +86,9 @@ li {
   position: center;
   float: left;
   list-style-type: none;
+}
+body{
+    overflow-x:hidden;
+    
 }
 </style>
