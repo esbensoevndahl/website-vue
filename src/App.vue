@@ -10,42 +10,34 @@
     />
   </header>
   <body>
-  <nav-bar @change-page="activePage"></nav-bar>
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="32"
-    height="32"
-    fill="currentColor"
-    class="bi bi-laptop"
-    viewBox="0 0 16 16"
-  >
-    <path
-      d="M13.5 3a.5.5 0 0 1 .5.5V11H2V3.5a.5.5 0 0 1 .5-.5h11zm-11-1A1.5 1.5 0 0 0 1 3.5V12h14V3.5A1.5 1.5 0 0 0 13.5 2h-11zM0 12.5h16a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 12.5z"
-    />
-  </svg>
-  <div id="landingPage" v-if="homeIsActive">
-    <LandingPage msg="Hi I'm Esben" />
-  </div>
+    <nav-bar @change-page="activePage"></nav-bar>
+    <br /><br />
 
-  <div id="resume" v-if="resumeIsActive">
-    <resume></resume>
-  </div>
+    <div id="landingPage" v-if="homeIsActive">
+      <home></home>
+    </div>
 
-  <div id="blog" v-if="blogIsActive">
-    <blog></blog>
-  </div>
+    <div id="resume" v-if="resumeIsActive">
+      <resume></resume>
+    </div>
+
+    <div id="blog" v-if="blogIsActive">
+      <blog></blog>
+    </div>
+    <br />
+    <br />
   </body>
 </template>
 
 <script>
 import NavBar from "./components/NavBar.vue";
-import LandingPage from "./components/LandingPage.vue";
+import Home from "./components/Home.vue";
 import Blog from "./components/Blog.vue";
 import Resume from "./components/Resume.vue";
 export default {
   name: "App",
   components: {
-    LandingPage,
+    Home,
     NavBar,
     Resume,
     Blog,
@@ -93,8 +85,12 @@ export default {
   color: #2c3e50;
   margin-top: 0px;
 }
+</style>
 
-body{
-  
+<style scoped>
+body {
+  margin: 0px;
+  height: 140vh;
+  background-color: lightgrey;
 }
 </style>

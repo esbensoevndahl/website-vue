@@ -19,19 +19,20 @@
       </p>
 
       <div id="education">
-        <h2>Education</h2>
+        <h1>Education</h1>
         <h4>
           B.A. <b>Computer Science</b> at
           <i><b>Boston University</b>, Boston, Massachusetts, USA,</i> Class of
           <b>2022</b>
         </h4>
-        <div class="col-xs-6">
+        <div>
           <h4><b>Relevant courses:</b></h4>
           <ul>
             <li :key="subject" v-for="subject in classes">{{ subject }}</li>
           </ul>
         </div>
-        <div class="col-xs-6">
+        <br />
+        <div>
           <h4><b>Programming languages include:</b></h4>
           <i class="devicon-c-line"></i>
           <i class="devicon-java-plain colored"></i>
@@ -50,36 +51,7 @@
       <br />
 
       <div id="accomplishments">
-        <h2>Accomplishments</h2>
-        <div class="col-xs-6">
-          <h4><b>Danish National Rowing Team:</b></h4>
-          <ul>
-            <li class="left"><b>2015</b>, <i>U18, Baltic Cup</i>, 5th place</li>
-            <br />
-            <li class="left">
-              <b>2016</b>, <i>U19, European Rowing Championships</i>, 5th place
-            </li>
-            <br />
-            <li class="subleft">
-              <i>U19, World Rowing Championships</i>, 11th place
-            </li>
-            <br />
-            <li class="left">
-              <b>2017</b>, <i>U19, European Rowing Championships</i>, 5th place
-            </li>
-            <br />
-            <li class="subleft">
-              <i>U19, World Rowing Championships</i>, 7th place
-            </li>
-            <br />
-            <li class="left">
-              <b>2018</b>, <i>U23, World Rowing Championships</i>, 10th place
-            </li>
-            <br />
-          </ul>
-        </div>
-
-        <div class="col-xs-6">
+        <h1>Accomplishments</h1>
           <h4><b>Boston University Men's Crew:</b></h4>
           <ul>
             <li class="left">
@@ -99,11 +71,35 @@
             <li class="subleft"><i>Head of the Charles Regatta</i>, MA, USA</li>
             <br />
           </ul>
-        </div>
+        <h4><b>Danish National Rowing Team:</b></h4>
+        <ul>
+          <li class="left"><b>2015</b>, <i>U18, Baltic Cup</i>, 5th place</li>
+          <br />
+          <li class="left">
+            <b>2016</b>, <i>U19, European Rowing Championships</i>, 5th place
+          </li>
+          <br />
+          <li class="subleft">
+            <i>U19, World Rowing Championships</i>, 11th place
+          </li>
+          <br />
+          <li class="left">
+            <b>2017</b>, <i>U19, European Rowing Championships</i>, 5th place
+          </li>
+          <br />
+          <li class="subleft">
+            <i>U19, World Rowing Championships</i>, 7th place
+          </li>
+          <br />
+          <li class="left">
+            <b>2018</b>, <i>U23, World Rowing Championships</i>, 10th place
+          </li>
+          <br />
+        </ul>
       </div>
 
       <div id="contact">
-        <h2>Contact</h2>
+        <h1>Contact</h1>
         <div class="row">
           <div class="col-xs-4">
             <p><b>E-mail:</b> eskok@bu.edu</p>
@@ -183,18 +179,20 @@ ul {
 }
 .left {
   position: absolute;
-  margin-left: 200px;
 }
 .subleft {
   position: absolute;
-  margin-left: 240px;
+  margin-left: 40px;
+}
+.resumeText {
+  display: block;
+  margin-left: 100;
+  margin-right: 100;
 }
 body {
   overflow-x: hidden;
-}
-.resumeText{
-    display: block;
-    margin-left: 100;
-    margin-right: 100;
+  margin-left: 100px;
+  margin-right: 100px;
+  background-color: white;
 }
 </style>
