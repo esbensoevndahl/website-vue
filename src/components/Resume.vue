@@ -42,7 +42,7 @@
           <i class="devicon-javascript-plain colored"></i>
           <i class="devicon-vuejs-plain colored"></i>
           <ul>
-            <li :key="language" v-for="language in programmingLanguages">
+            <li class="inline" :key="language" v-for="language in programmingLanguages">
               {{ language }}
             </li>
           </ul>
@@ -52,25 +52,26 @@
 
       <div id="accomplishments">
         <h1>Accomplishments</h1>
-          <h4><b>Boston University Men's Crew:</b></h4>
-          <ul>
-            <li class="left">
-              <b>2018</b>, <i>Head of the Charles Regatta</i>, MA, USA
-            </li>
-            <br />
-            <li class="left"><b>2019</b>, <i>Windermere Cup</i>, WA, USA</li>
-            <br />
-            <li class="subleft"><i>Eastern Sprints Regatta</i>, MA, USA</li>
-            <br />
-            <li class="subleft">
-              <i>IRA National Championship Regatta</i>, CA, USA
-            </li>
-            <br />
-            <li class="subleft"><i>Henley Royal Regatta</i>, Henley, UK</li>
-            <br />
-            <li class="subleft"><i>Head of the Charles Regatta</i>, MA, USA</li>
-            <br />
-          </ul>
+        <h4><b>Boston University Men's Crew:</b></h4>
+        <ul>
+          <li class="left">
+            <b>2018</b>, <i>Head of the Charles Regatta</i>, MA, USA
+          </li>
+          <br />
+          <li class="left"><b>2019</b>, <i>Windermere Cup</i>, WA, USA</li>
+          <br />
+          <li class="subleft"><i>Eastern Sprints Regatta</i>, MA, USA</li>
+          <br />
+          <li class="subleft">
+            <i>IRA National Championship Regatta</i>, CA, USA
+          </li>
+          <br />
+          <li class="subleft"><i>Henley Royal Regatta</i>, Henley, UK</li>
+          <br />
+          <li class="subleft"><i>Head of the Charles Regatta</i>, MA, USA</li>
+          <br />
+        </ul>
+        <br>
         <h4><b>Danish National Rowing Team:</b></h4>
         <ul>
           <li class="left"><b>2015</b>, <i>U18, Baltic Cup</i>, 5th place</li>
@@ -161,11 +162,11 @@ export default {
         "Concepts of Programming Languages",
       ],
       programmingLanguages: [
-        "C",
-        "Java",
-        "Ocaml",
-        "Python",
-        "HTML/CSS",
+        "C, ",
+        "Java, ",
+        "Ocaml, ",
+        "Python, ",
+        "HTML/CSS, ",
         "JavaScript and Vue.js",
       ],
     };
@@ -179,10 +180,11 @@ ul {
 }
 .left {
   position: absolute;
+  margin-left:33%;
 }
 .subleft {
   position: absolute;
-  margin-left: 40px;
+  margin-left: 35.6%;
 }
 .resumeText {
   display: block;
@@ -194,5 +196,8 @@ body {
   margin-left: 100px;
   margin-right: 100px;
   background-color: white;
+}
+.inline{
+  display:inline;
 }
 </style>
